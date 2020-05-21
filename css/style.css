@@ -89,13 +89,13 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     width: 570px;
-    margin-right: 23px;
     list-style: none;
     padding:0;
+    margin:0 23px 0 0;
 }
 
-.features-block:last-child {
-    margin-right: 0;
+.features-block li:last-child {
+    margin:0;
 }
 
 .features-block li {
@@ -131,18 +131,16 @@ h2 {
 
 .screenshot-block {
     display: flex;
-    padding:0 0 30px;
 }
 
-.screenshot-block:last-child {
-    padding-bottom: 0;
-}
-
+.screenshot-block:last-child .screenshot-img {
+    margin: 0;
+    }
 
 .screenshot-img {
     width: 48% ;
     display: flex;
-    margin:0; 
+    margin: 0 0 20px 0;
 }
 
 .screenshot-img img {
@@ -178,15 +176,19 @@ h2 {
 
 .review-inner {
     display: flex;
-    margin:0 0 25px;
+    margin:0;
 }
 
 .review-content {
     display: flex;
     width: 48%;
-    margin:0;
+    margin: 0 0 20px 0;
     padding:0;
 }
+
+.review-inner:last-child .review-content {
+    margin: 0;
+    }
 
 .review-content img {
     border-radius: 50%;
@@ -219,17 +221,265 @@ h2 {
     font-size: 14px;
     line-height: 18px;
     color:#333333;
-    margin:0 0 15px 0;
 }
 
 .review-person-name {
     color:#989898;
     font-size: 14px;
+    margin:15px 0 0 0;
+    display: block;
+}
+
+.offers {
+    padding:50px;
+    box-sizing: border-box;
+}
+
+.offers-title {
+    text-align: center;
+}
+
+.offers-blocks {
+    display: flex;
+    padding:0 89px;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.offers-inner {
+    padding:0 0 20px;
+    border:2px solid #445162;
+    margin:0 45px 0 0;
+    border-radius: 10px; 
+    background-color:#445162;
+    box-sizing: border-box;
+}
+
+.offers-inner:last-child {
     margin:0;
 }
+
+.offers-inner h4 {
+    text-align: center;
+    background-color: #445162;
+    color:#fff;
+    font-size: 24px;
+    line-height: 30px;
+    padding:15px 0;
+    margin:0; 
+}
+
+.offers-price {
+    text-align: center;
+    display: block;
+    color: #445162;
+    font-size: 40px;
+    padding:15px 0;
+    background-color: #fff;
+}
+
+.offers-inner ol {
+    margin:0;
+    color:#fff;
+    padding:15px 0 15px 40px;
+    font-size: 14px;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+
+.offers-inner button {
+    width: 260px;
+    height: 40px;
+    margin:0 20px;
+    border-radius: 10px;
+    border:1px solid transparent;
+    display: flex;
+    justify-content: center;
+    border:none;
+    color: #445162;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.offers-inner button:hover {
+    border:1px solid #fff;
+    background-color:#445162;
+    color: #fff;
+}
+
 /* main end */
 
 /* footer start */
+footer {
+  padding:50px 0 0 0;
+  background-color: #445162;
+}
 
+footer h2 {
+  color:#fff;
+  margin:0 0 30px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.footer-blocks {
+  display: flex;
+  padding:0 200px 50px 200px;
+}
+
+input[ type="text"], input[ type="email"] {
+  width: 500px;
+  height: 40px;
+  border:none;
+  border-radius: 5px;
+  margin:0 0 20px;
+  padding:0 0 0 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 500px;
+  height: 170px;
+  border-radius: 5px;
+  padding:10px 0 0 10px;
+  margin:0 0 20px;
+  box-sizing: border-box;
+}
+
+input[ type="submit"] {
+  padding:7px 47px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin:0 0 0 170px;
+  color: #445162;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  border:1px solid transparent;
+  background-color: #fff;
+}
+
+input[ type="submit"]:hover {
+  background-color:#445162;
+  color: #fff;
+  border:1px solid #fff;
+}
+
+.other-contacts-list {
+  list-style: none;
+  color:#fff;
+  margin:0 0 30px;
+  padding:0 0 0 45px;
+}
+
+.other-contacts-list  li {
+  padding:0 0 0 30px;
+  margin:0 0 15px;
+}
+
+.contact-skype {
+  background-image: url(../img/skype-icon.png);
+  background-repeat: no-repeat;
+  height: 26px;
+}
+
+.contact-icq {
+  background-image: url(../img/icq-icon.png);
+  background-repeat: no-repeat;
+  height: 26px;
+}
+.contact-email {
+  background-image: url(../img/email-icon.png);
+  background-repeat: no-repeat;
+  height: 22px;
+  
+}
+
+.contact-phone {
+  background-image: url(../img/phone-icon.png);
+  background-repeat: no-repeat;
+  height: 23px;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  padding:0 0 0 45px
+}
+
+.social-icons li:hover {
+  opacity: 0.5;
+}
+
+.twiter-icon {
+    background-image: url(../img/social-buttons.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    background-position: 0 0;
+  }
+  
+  
+  .facebook-icon {
+    background-image: url(../img/social-buttons.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    background-position: -48px 0;
+  }
+
+  .instagram-icon {
+    background-image: url(../img/social-buttons.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    background-position: -97px 0;
+  }
+
+  .google-icon {
+    background-image: url(../img/social-buttons.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    background-position: -148px 0;
+  }
+
+  .youtube-icon {
+    background-image: url(../img/social-buttons.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    background-position: -197px 0;
+  }
+
+
+.footer-copyright {
+    background-color: #fff;
+    padding:8px 0 8px 0;
+}
+
+.footer-copyright p {
+    margin:0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    color:#445162;
+}
 
 /* footer end */
